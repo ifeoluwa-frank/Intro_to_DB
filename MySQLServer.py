@@ -11,12 +11,11 @@ def create_database():
         )
 
         cursor = connection.cursor()
-        db_name = "alx_book_store"
         
         # Create database if it doesn't exist
         try:
-            cursor.execute(f"CREATE DATABASE IF NOT EXISTS {db_name}")
-            print(f"Database '{db_name}' created successfully!")
+            cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+            print("Database alx_book_store created successfully!")
         except mysql.connector.Error as err:
             print(f"Failed to create database: {err}")
         
