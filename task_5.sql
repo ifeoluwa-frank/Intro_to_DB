@@ -1,0 +1,1 @@
+INSERT INTO Customers (name, email, address) VALUES ("Cole Baidoo", "cbaidoo@sandtech.com", "123 Happiness Ave.")
